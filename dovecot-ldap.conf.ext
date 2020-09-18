@@ -1,0 +1,7 @@
+ldap_version = 3
+hosts = 192.168.1.1
+#dn = cn=mailuser,ou=先生,ou=利用者,dc=mizumotokoai-sh,dc=local
+#dnpass = maildir
+
+base = dc=mizumotokoai-sh,dc=local
+user_filter = (&(objectClass=person)(samaccountname=%u))

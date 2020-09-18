@@ -1,0 +1,8 @@
+hosts = 192.168.1.1
+base = DC=mizumotokoai-sh,DC=local
+ldap_version = 3
+auth_bind = yes
+auth_bind_userdn = mizumotokoai-sh\%u
+user_filter = (samAccountName=%u)
+pass_attrs = uid=user,userPassword=password
+pass_filter = (samAccountName=%u)
